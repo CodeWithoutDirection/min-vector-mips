@@ -21,9 +21,9 @@ comp:
 	j incr_vector
 
 incr_vector:
-	addi $a0, $a0, 4 # incrementa el valor en memoria del vector
 	addi, $a1, $a1, -1
 	beq $a1, $zero, return # si el valor incrementado es igual al tamaño del vector, return
+	addi $a0, $a0, 4 # incrementa el valor en memoria del vector
 	j comp
 	
 return:
