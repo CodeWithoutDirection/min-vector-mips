@@ -11,7 +11,7 @@ main:
 	j exit
 
 min_vector:
-	lw $s0, 0($a0) # almacena el valor en posicion de memoria x
+	lw $s0, 0($a0) # almacena el valor en posicion de memoria i
 	j incr_vector
 
 comp:
